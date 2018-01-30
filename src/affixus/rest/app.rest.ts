@@ -1,5 +1,7 @@
 import * as express from 'express';
 
+import {WelcomeController} from './welcome.controller';
+
 // Creates and configures an ExpressJS web server.
 class App {
   // ref to Express instance
@@ -24,13 +26,7 @@ class App {
     let router = express.Router();
     
     // placeholder route handler
-    router.get('/', (req, res, next) => {
-      res.json({
-        message: 'Hello World!'
-      });
-    });
-    
-    this.express.use('/', router);
+    this.express.use('/', WelcomeController);
   }
 }
 export default new App().express;
