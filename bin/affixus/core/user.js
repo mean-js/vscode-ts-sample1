@@ -1,35 +1,34 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var User = /** @class */ (function () {
-    function User() {
+class User {
+    constructor() {
         this.city = "Mumbai";
     }
-    User.prototype.setTitle = function (title) {
+    setTitle(title) {
         this.title = title;
-    };
-    User.prototype.getTitle = function () {
+    }
+    getTitle() {
         return this.title;
-    };
-    User.prototype.setName = function (name) {
+    }
+    setName(name) {
         this.name = name;
-    };
-    User.prototype.getName = function () {
+    }
+    getName() {
         return this.name;
-    };
-    User.prototype.setNumber = function (id) {
+    }
+    setNumber(id) {
         this.id = id;
-    };
-    User.prototype.getNumber = function () {
+    }
+    getNumber() {
         return this.id;
-    };
-    User.prototype.setCity = function (city) {
+    }
+    setCity(city) {
         this.city = city;
-    };
-    User.prototype.getCity = function () {
+    }
+    getCity() {
         return this.city;
-    };
-    return User;
-}());
+    }
+}
 exports.User = User;
 ;
 //# sourceMappingURL=user.js.map

@@ -13,6 +13,17 @@
             "outFiles": [
                 "${workspaceFolder}/bin/**/*.js"
             ]
+        },
+
+        {
+            "type": "node",
+            "request": "launch",
+            "sourceMaps": true,
+            "name": "REST Program",
+            "program": "${workspaceFolder}/src/app.ts",
+            "outFiles": [
+                "${workspaceFolder}/bin/**/*.js"
+            ]
         }
     ]
 }
