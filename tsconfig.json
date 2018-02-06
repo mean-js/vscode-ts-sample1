@@ -6,11 +6,13 @@
     "outDir": "./bin",                        /* Redirect output structure to the directory. */
     "rootDir": "./src",                       /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
 
-    "strict": true                            /* Enable all strict type-checking options. */
+    "strict": true,                            /* Enable all strict type-checking options. */
+    "watch": true,
+    "allowJs": true
   },
 
   "include": [
-    "**/*.ts"
+    "**/*.ts", "src/**/*.js"
   ],
   "exclude": [
     "node_modules"

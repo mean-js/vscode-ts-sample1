@@ -1,6 +1,8 @@
 import * as express from 'express';
 
 import {WelcomeController} from './welcome.controller';
+import {WelcomeController1} from './welcome.controller.1';
+let WelcomeController2 = require('./welcome.controller.2');
 
 // Creates and configures an ExpressJS web server.
 class App {
@@ -26,7 +28,10 @@ class App {
     let router = express.Router();
     
     // placeholder route handler
-    this.express.use('/', WelcomeController);
+    this.express.use('/a', WelcomeController);
+    this.express.use('/b', WelcomeController1);
+    this.express.use('/c', WelcomeController2);
+
   }
 }
 export default new App().express;
